@@ -1,0 +1,10 @@
+Maven 项目
+
+版本信息
+
+Spring4.1.3、Hibernate4.3.1、Struts2.3.1、jdk1.7、tomcat7、myeclipse14、jQuery1.11.3
+
+配置指南
+
+1. 修改 src/main/resources/db.properties 文件，添加数据库的信息（这个信息暂时没有使用，只供连接）；
+
