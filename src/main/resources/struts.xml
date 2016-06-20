@@ -24,8 +24,8 @@
       
        <package name ="user" namespace="/user" extends="struts-default">
       		<action name ="user_*" method="{1}" class="com.fz.action.LoginAction" >
-      		 	 <result name="success">index.html</result>  
-            	<result name="error">error.html</result>   
+      		 	 <result name="success" type="redirect">/index.html</result>  
+            	<result name="error" type="redirect">/error.html</result>   
       		</action>
       </package>
       
