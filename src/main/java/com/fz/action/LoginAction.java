@@ -20,7 +20,10 @@ public class LoginAction extends ActionSupport {
 
 	public String login() {
 		System.out.println("email:" + email + "---->passowrd:" + password);
-		return SUCCESS;
+		if (userService.find(email, password))
+			return SUCCESS;
+
+		return ERROR;
 	}
 
 	public UserService getUserService() {

@@ -11,7 +11,7 @@ import com.fz.model.User;
 public class UserService {
 	private UserDao<User> userDao;
 
-	public boolean login(String email, String password) {
+	public boolean find(String email, String password) {
 		return this.userDao.login(new User(email, password));
 	}
 

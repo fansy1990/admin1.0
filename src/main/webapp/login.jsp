@@ -1,4 +1,5 @@
 <%@ page language="java" pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
+<%@ taglib uri="/struts-tags" prefix="s"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,6 +31,18 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="js/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/sb-admin-2.js"></script>
 
 </head>
 
@@ -55,28 +68,28 @@
                                     <label>
                                         <input name="remember" type="checkbox" value="Remember Me">记住我
                                     </label>
+                                    <s:if test="#parameters.mark[0]=='mark'">  
+			    	 					<div class="alert alert-warning">
+			                                用户名或密码错误！
+			                            </div>
+									</s:if> 
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
                                 <button class="btn btn-lg btn-success btn-block" type="submit">登录</button>
                             </fieldset>
+                          
+                            
+			
+						
                         </form>
+                        <s:debug></s:debug>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="js/metisMenu.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/sb-admin-2.js"></script>
+	
+    
     
     <script type="text/javascript">
     	
