@@ -1,8 +1,10 @@
-
-function changeRight(url){
-	console.info('before');
-	document.getElementById("page-wrapper").innerHTML=url;
-	console.info('after');
+function autoHeight(){
+    var iframe = document.getElementById("page-content");
+    if(iframe.Document){//ie自有属性
+        iframe.style.height = iframe.Document.documentElement.scrollHeight;
+    }else if(iframe.contentDocument){//ie,firefox,chrome,opera,safari
+        iframe.height = iframe.contentDocument.body.offsetHeight ;
+    }
 }
 
 $(function () {

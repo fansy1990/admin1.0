@@ -26,10 +26,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <!-- DataTables CSS -->
     <link href="css/dataTables.bootstrap.css" rel="stylesheet">
 
-    <!-- DataTables Responsive CSS 没有？？？-->
-    <!-- 
-    <link href="../bower_components/datatables-responsive/css/dataTables.responsive.css" rel="stylesheet">
- 	-->
     <!-- Custom CSS -->
     <link href="css/sb-admin-2.css" rel="stylesheet">
 
@@ -46,10 +42,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </head>
 
 <body>
-
-    <div id="wrapper">
-
-        <div id="page-wrapper">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">Tables</h1>
@@ -787,10 +780,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <!-- /.row -->
         </div>
         <!-- /#page-wrapper -->
-
-    </div>
-    <!-- /#wrapper -->
-
+	</body>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -816,6 +806,5 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     });
     </script>
 
-</body>
 
 </html>
