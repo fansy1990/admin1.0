@@ -7,5 +7,10 @@ function changeRight(url){
 
 $(function () {
 	
-	$('#test_table').bind('click', changeRight('test/test.jsp'));
+	$('.nav-second-level a').bind('click', function(){
+		
+		var tt_url = $(this).attr('tt');
+		console.info('tt'+tt_url);
+		$('#page-content').prop('src',tt_url);
+	});
 })
