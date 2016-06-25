@@ -11,8 +11,15 @@ $(function () {
 	
 	$('.nav-second-level a').bind('click', function(){
 		
-		var tt_url = $(this).attr('tartget_url');
-		console.info('tartget_url:'+tt_url);
+		var tt_url = $(this).attr('target_url');
+		console.info('target_url:'+tt_url);
+		$('#page-content').prop('src',tt_url);
+	});
+	
+	$('.first-level a').bind('click', function(){
+		
+		var tt_url = $(this).attr('target_url');
+		console.info('target_url:'+tt_url);
 		$('#page-content').prop('src',tt_url);
 	});
 })

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bootstrap Admin Theme</title>
+    <title>Hadoop Admin</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -46,8 +46,8 @@
 
     <!-- Morris Charts JavaScript -->
     <script src="js/raphael-min.js"></script>
-    <!-- <script src="js/morris.min.js"></script> -->
-    <!-- <script src="js/morris-data.js"></script> -->
+   <!--  <script src="js/morris.min.js"></script>
+    <script src="js/morris-data.js"></script> -->
 
     <!-- Custom Theme JavaScript -->
     <script src="js/sb-admin-2.js"></script>
@@ -67,7 +67,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"> Admin v2.0</a>
+                <a class="navbar-brand" href="index.html"> Hadoop Admin v1.0</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -295,9 +295,14 @@
                             </div>
                             <!-- /input-group -->
                         </li>
-                        <li>
+                        
+                        <!-- <li>
                             <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
-                        </li>
+                        </li> -->
+                         <li class="first-level">
+                            <a target_url="hadoop/dashboard.jsp" role="button"><i class="fa fa-dashboard fa-fw"></i> 集群概述</a>
+                            
+                        </li> 
                         <li>
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
@@ -321,10 +326,10 @@
                             <a href="#"><i class="fa fa-linux fa-fw"></i> Test<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a tartget_url="test/test.jsp" id="test_table" role="button"><i class="fa fa-table"></i> Tables</a>
+                                    <a target_url="test/test.jsp"  role="button"><i class="fa fa-table"></i> Tables</a>
                                 </li>
                                 <li>
-                                    <a tartget_url="test/demo-form.jsp" role="button"><i class="fa fa-list-alt"></i> Demo Form</a>
+                                    <a target_url="test/demo-form.jsp" role="button"><i class="fa fa-list-alt"></i> Demo Form</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
